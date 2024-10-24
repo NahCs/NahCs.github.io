@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Navegador -->
+        <nav>
+            <div class="nav_logo">
+                <p>Nahuel Campos</p>
+            </div>
+            <ul class="nav_links">
+                <li><a href="#bio" class="link">Bio</a></li>
+                <li><a href="#formation" class="link">Conocimientos</a></li>
+                <li><a href="#proyect" class="link">Proyectos</a></li>
+                <li><a href="#contact" class="link">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- inicio -->
+        <section class="inicio">
+            <div class="presentacion_saludo">
+                <div class="presentacion_texto">
+                    <h1>Nahuel</h1>
+                    <h2>Desarrollador web</h2>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="container">
+            <!-- Presentacion-->
+            <section id="bio" class="bio">
+                <h2>Sobre mi</h2>
+                <article class="bio_texto">
+                    <p>Hola! soy Nahuel, un desarrollador web orientado al frontend y actualmente soy estudiante del
+                        programa ONE de Alura Latam </p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sequi tenetur, at quibusdam
+                        natus deleniti ea reprehenderit quo sunt ex cumque nam illo veniam accusamus asperiores facere?
+                        Natus, consequatur quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt corrupti,
+                        eaque recusandae rem cupiditate debitis expedita. Illum quos dolorem eaque, expedita totam
+                        incidunt aperiam est similique animi? Nesciunt, eligendi nihil.</p>
+                </article>
+                <div class="bio_redes">
+                    <h2>Si queres saber mas sobre mi, te dejo mis redes</h2>
+                    <div class="bio_links">
+                        <a class="bio_link" target="_blank" href="https://github.com/NahCs">Github</a>
+                        <a class="bio_link" target="_blank"
+                            href="https://www.linkedin.com/in/nahuel-camposs/">Linkedin</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Proyecto -->
+            <section class="proyecto">
+                <div class="proyecto-contenedor">
+                    <div class="proyecto-item">
+                        <a href="https://encriptador-de-textosncs.netlify.app/">
+                            <img src="./img/Encriptador-de-textos.png" alt="Tienda de juegos">
+                        </a>
+                        <h3>Encriptador</h3>
+                    </div>
+                    <div class="proyecto-item">
+                        <a href="https://front-grupo11.netlify.app/">
+                            <img src="./img/Tienda-de-juegos.png" alt="Encriptador">
+                        </a>
+                        <h3>Tienda de juegos</h3>
+                    </div>
+                </div>
+
+            </section>
+            <!-- Conocimiento -->
+            <Section id="formation" class="formation">
+                <h3>Habilidades tecnicas</h3>
+                <ul class="formation_list" role="list">
+                    <li class="formation_item">
+                        <img class="formation_icon" src="./img/html.png" alt="HTML 5 icon">
+                        <p class="formation_name">HTML 5</p>
+                    </li>
+                    <li class="formation_item">
+                        <img class="formation_icon" src="./img/css.png" alt="CSS icon">
+                        <p class="formation_name">CSS</p>
+                    </li>
+                    <li class="formation_item">
+                        <img class="formation_icon" src="./img/Js.png" alt="JavaScript icon">
+                        <p class="formation_name">JavaScript</p>
+                    </li>
+                </ul>
+            </section>
+            <!-- Contacto -->
+            <section id="contact" class="formulario">
+                <h3>Contacto</h3>
+                <form id="formulario" class="form">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required="">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required="">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" required=""></textarea>
+                    <div id="error"></div>
+                    <button id="enviar-btn" class="boton_enviar" type="submit">Enviar</button>
+                </form>
+            </section>
+        </section>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        <p>Desarrollado por NahuelCs - 2024</p>
+    </footer>
+</body>
+
+</html>
